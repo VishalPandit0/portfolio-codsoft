@@ -1,0 +1,355 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 1s ease-out 0.5s forwards;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+header img{
+    width: 10%;
+    height: 20%;
+    border-radius: 50%;
+    animation:fadeIn 3s;
+}
+section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+#about p{
+   font-size:20px ;
+}
+section:hover {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Skills list */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Project styles */
+.project {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease-out;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Resume link styles */
+.resume-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+}
+
+.resume-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+footer:hover {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+/* Keyframes animations */
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 1s ease-out 0.5s forwards;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+/* About Section styles */
+#about {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+#about:hover {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* About Section text color */
+#about h2, #about p {
+    color: #333;
+}
+
+/* Skills Section styles */
+#skills {
+    background-color: #ffdb58; /* Yellow */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+#skills:hover {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Projects Section styles */
+#projects {
+    background-color: #ffa07a; /* Light Salmon */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+#projects:hover {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Project Section styles */
+.project {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease-out;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Resume link styles */
+.resume-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+}
+
+.resume-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Contact Section styles */
+#contact {
+    background-color: #87cefa; /* Light Sky Blue */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+#contact:hover {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+footer:hover {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Footer link styles */
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+
+
